@@ -1,0 +1,333 @@
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+/*Navbar*/
+.navbar {
+  height: 5rem;
+  background-color: white;
+}
+
+.fa-compass {
+  color: #fe424d;
+  font-size: 2rem;
+}
+
+.nav-link {
+  color: #222222 !important;
+}
+
+/*Search Bar */
+.search-btn {
+  background-color: #fe424d !important;
+  color: #fff !important;
+  border-radius: 25px !important;
+  padding: 0 1rem !important;
+}
+
+.search-btn:hover {
+  background-color: #fe424d;
+  color: #fff !important;
+}
+.search-btn i {
+  display: inline !important;
+  margin-right: 0.5rem !important;
+}
+.search-inp {
+  border-radius: 25px !important;
+  padding: 0.5rem 3rem !important;
+  font-size: 1rem !important;
+}
+
+/* Footer*/
+
+.f-info-links a {
+  text-decoration: none;
+  color: #222222;
+  margin-right: 0.4rem;
+}
+
+.f-info-links a:hover {
+  text-decoration: underline;
+}
+
+.f-info-links,
+.f-info-socials,
+.f-info-brand {
+  width:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.f-info-socials i {
+  font-size: 1.2rem;
+  margin-right: 1rem;
+}
+
+ .f-info {
+  text-align: center;
+  height: 8rem;
+  background-color: #ebebeb;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:space-evenly;
+  
+}  
+
+
+/* cards */
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.card-text p {
+  font-weight: 400 !important;
+}
+
+.listing-link {
+  text-decoration: none;
+}
+
+/* card effect */
+.card-img-overlay {
+  opacity: 0 !important;
+}
+
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: rgb(39, 32, 32) !important;
+}
+/* new page */
+.add-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* edit page */
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+/* show page */
+.show-img {
+  height: 38vh;
+}
+
+.btns {
+  display: flex;
+}
+
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* reviews */
+.review-card {
+  height: 250px; /* Or adjust based on your content */
+}
+
+.review-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* map */
+#map {
+  height: 400px;
+  width: 80vh;
+ 
+}
+/* login and signup buttons */
+.login-btn, .signUp-btn{
+  background-color: #fe424d !important ;
+  color: #fff !important;
+}
+
+/* ================= FILTER ICONS ================= */
+#filters {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+  overflow-x: auto; /* important */
+  white-space: nowrap;
+  scrollbar-width: none; /* Firefox */
+}
+
+#filters::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+.filter {
+  text-align: center;
+  color: #222;
+  text-decoration: none;
+  margin-right: 2rem;
+  margin-top: 2rem;
+  opacity: 0.7;
+}
+
+.filter:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.filter i {
+  font-size: 1.3rem;
+  margin-top: 1rem;
+}
+
+.filter p {
+  font-size: 0.75rem;
+}
+
+.page-link {
+  color: black !important;
+}
+
+.tax-info {
+  display: none;
+}
+
+#filters-wrapper {
+  position: relative;
+}
+
+.tax-toggle {
+  border: 1px solid black;
+
+  border-radius: 1rem;
+  height: 3.25rem;
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  padding: 1rem;
+  white-space: nowrap;
+}
+
+.image{
+  height: 3rem;
+  color: #fe424d;
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .navbar {
+    height: auto;
+    padding: 0.5rem 1rem;
+  }
+
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  #map {
+    width: 100% !important;
+    height: 250px;
+    border-radius: 1rem;
+  }
+
+  .show-img {
+    height: auto;
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .review-card {
+    height: auto;
+    margin-bottom: 1rem;
+  }
+
+  .listing-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .card-img-top {
+    height: 220px;
+  }
+  .f-info {
+    height: auto;
+    padding: 1rem 0;
+    gap: 0.5rem;
+  }
+
+  .f-info-links,
+  .f-info-socials,
+  .f-info-brand {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  /*@media (max-width: 768px) {*/
+  #filters {
+    position: sticky;
+    top: 60px; /* navbar ke niche */
+    background: white;
+    z-index: 100;
+    padding: 0.8rem 0.5rem;
+  }
+
+  .filter {
+    min-width: 70px;
+  }
+
+  .filter i {
+    font-size: 1.1rem;
+  }
+
+  .filter p {
+    font-size: 0.7rem;
+  }
+
+  /* 🔥 Toggle mobile friendly */
+  .tax-toggle label {
+    font-size: 0.65rem;
+  }
+
+  .tax-toggle input {
+    transform: scale(0.85);
+  }
+}
+
+/* 📱 Mobile screens */
+@media (max-width: 576px) {
+  .search-btn {
+    padding: 0.35rem 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .search-btn i {
+    margin-right: 0;
+  }
+
+  .search-inp {
+    padding: 0.45rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
